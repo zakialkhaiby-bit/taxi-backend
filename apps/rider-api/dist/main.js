@@ -45213,7 +45213,7 @@ __webpack_require__(131);
 const _licenseverify = __webpack_require__(13);
 async function bootstrap() {
     const app = await _core.NestFactory.create(_riderapimodule.RiderAPIModule.register());
-    const port = parseInt(process.env.RIDER_API_PORT || '3000', 10);
+    const port = parseInt(process.env.PORT || process.env.RIDER_API_PORT || '3000', 10);
     app.enableShutdownHooks();
     app.enableCors();
     const config = await (0, _licenseverify.getConfig)(process.env.NODE_ENV ?? 'production');
@@ -45222,8 +45222,8 @@ async function bootstrap() {
             credential: _firebaseadmin.credential.cert(`${process.cwd()}/config/${config.firebaseProjectPrivateKey}`)
         });
     }
-    await app.listen(port, ()=>{
-        _common.Logger.log('Listening at http://localhost:' + port, 'Rider API');
+    await app.listen(port, '0.0.0.0', ()=>{
+        _common.Logger.log('Listening at http://0.0.0.0:' + port, 'Rider API');
     });
 }
 bootstrap();

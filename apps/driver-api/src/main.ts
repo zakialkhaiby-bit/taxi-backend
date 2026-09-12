@@ -11,7 +11,10 @@ import { getConfig } from 'license-verify';
 async function bootstrap() {
   const app = await NestFactory.create(DriverAPIModule.register());
 
-  const port = parseInt(process.env.DRIVER_API_PORT || '3000', 10);
+  const port = parseInt(
+    process.env.PORT || process.env.DRIVER_API_PORT || '3000',
+    10,
+  );
   app.enableShutdownHooks();
   app.enableCors();
   const config = await getConfig(process.env.NODE_ENV ?? 'production');
@@ -22,8 +25,8 @@ async function bootstrap() {
       ),
     });
   }
-  await app.listen(port, () => {
-    Logger.log('Listening at http://localhost:' + port, 'Driver API');
+  await app.listen(port, '0.0.0.0', () => {
+    Logger.log('Listening at http://0.0.0.0:' + port, 'Driver API');
   });
 }
 
