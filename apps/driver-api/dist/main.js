@@ -5,16 +5,22 @@
 /* 1 */
 /***/ ((module) => {
 
-module.exports = require("@nestjs/common");
+module.exports = require("@swc/helpers/_/_interop_require_wildcard");
 
 /***/ }),
 /* 2 */
 /***/ ((module) => {
 
-module.exports = require("@nestjs/core");
+module.exports = require("@nestjs/common");
 
 /***/ }),
 /* 3 */
+/***/ ((module) => {
+
+module.exports = require("@nestjs/core");
+
+/***/ }),
+/* 4 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -27,36 +33,36 @@ Object.defineProperty(exports, "DriverAPIModule", ({
         return DriverAPIModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _common = __webpack_require__(1);
-const _config = __webpack_require__(6);
-const _graphql = __webpack_require__(7);
-const _schedule = __webpack_require__(8);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _path = __webpack_require__(21);
-const _setup = __webpack_require__(22);
-const _apollo = __webpack_require__(15);
-const _announcementsmodule = __webpack_require__(23);
-const _authmodule = __webpack_require__(28);
-const _jwtstrategy = __webpack_require__(65);
-const _chatmodule = __webpack_require__(68);
-const _complaintmodule = __webpack_require__(71);
-const _driverapisetupnotfoundcontroller = __webpack_require__(74);
-const _driverapicontroller = __webpack_require__(76);
-const _drivermodule = __webpack_require__(31);
-const _feedbacksmodule = __webpack_require__(80);
-const _ordermodule = __webpack_require__(46);
-const _payoutmodule = __webpack_require__(85);
-const _sosmodule = __webpack_require__(104);
-const _uploadmodule = __webpack_require__(34);
-const _walletmodule = __webpack_require__(96);
-const _core = __webpack_require__(2);
-const _nestjsprometheus = __webpack_require__(108);
-const _licenseverify = __webpack_require__(13);
-const _notificationmodule = __webpack_require__(109);
-const _ephemeralmessagesmodule = __webpack_require__(112);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _common = __webpack_require__(2);
+const _config = __webpack_require__(7);
+const _graphql = __webpack_require__(8);
+const _schedule = __webpack_require__(9);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _path = __webpack_require__(23);
+const _setup = __webpack_require__(24);
+const _apollo = __webpack_require__(16);
+const _announcementsmodule = __webpack_require__(25);
+const _authmodule = __webpack_require__(30);
+const _jwtstrategy = __webpack_require__(67);
+const _chatmodule = __webpack_require__(70);
+const _complaintmodule = __webpack_require__(73);
+const _driverapisetupnotfoundcontroller = __webpack_require__(76);
+const _driverapicontroller = __webpack_require__(78);
+const _drivermodule = __webpack_require__(33);
+const _feedbacksmodule = __webpack_require__(82);
+const _ordermodule = __webpack_require__(48);
+const _payoutmodule = __webpack_require__(87);
+const _sosmodule = __webpack_require__(106);
+const _uploadmodule = __webpack_require__(36);
+const _walletmodule = __webpack_require__(98);
+const _core = __webpack_require__(3);
+const _nestjsprometheus = __webpack_require__(110);
+const _licenseverify = __webpack_require__(14);
+const _notificationmodule = __webpack_require__(111);
+const _ephemeralmessagesmodule = __webpack_require__(114);
 let DriverAPIModule = class DriverAPIModule {
     constructor(licenseService){
         this.licenseService = licenseService;
@@ -152,43 +158,43 @@ DriverAPIModule = _ts_decorate._([
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ ((module) => {
 
 module.exports = require("@swc/helpers/_/_ts_decorate");
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ ((module) => {
 
 module.exports = require("@swc/helpers/_/_ts_metadata");
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/config");
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/graphql");
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/schedule");
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/typeorm");
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -567,11 +573,11 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "@nestjs/common"
-var common_ = __webpack_require__(1);
+var common_ = __webpack_require__(2);
 // EXTERNAL MODULE: external "@nestjs/typeorm"
-var typeorm_ = __webpack_require__(9);
+var typeorm_ = __webpack_require__(10);
 // EXTERNAL MODULE: external "typeorm"
-var external_typeorm_ = __webpack_require__(11);
+var external_typeorm_ = __webpack_require__(12);
 ;// ../../libs/database/src/lib/entities/taxi/car-model.entity.ts
 function _ts_decorate(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -610,7 +616,7 @@ CarModelEntity = _ts_decorate([
 ], CarModelEntity);
 
 // EXTERNAL MODULE: external "@nestjs/graphql"
-var graphql_ = __webpack_require__(7);
+var graphql_ = __webpack_require__(8);
 ;// ../../libs/database/src/lib/entities/enums/driver-deduct-transaction-type.enum.ts
 
 var DriverDeductTransactionType = /*#__PURE__*/ function(DriverDeductTransactionType) {
@@ -10042,7 +10048,7 @@ PaymentGatewayEntity = payment_gateway_entity_ts_decorate([
 ], PaymentGatewayEntity);
 
 // EXTERNAL MODULE: external "proper-url-join"
-var external_proper_url_join_ = __webpack_require__(12);
+var external_proper_url_join_ = __webpack_require__(13);
 var external_proper_url_join_default = /*#__PURE__*/__webpack_require__.n(external_proper_url_join_);
 ;// ../../libs/database/src/lib/entities/media.entity.ts
 function media_entity_ts_decorate(decorators, target, key, desc) {
@@ -11968,7 +11974,7 @@ TaxiOrderShopEntity = taxi_order_shop_entity_ts_decorate([
 ], TaxiOrderShopEntity);
 
 // EXTERNAL MODULE: external "license-verify"
-var external_license_verify_ = __webpack_require__(13);
+var external_license_verify_ = __webpack_require__(14);
 ;// ../../libs/database/src/lib/interfaces/app-config-info.dto.ts
 function app_config_info_dto_ts_decorate(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12077,7 +12083,7 @@ License = license_dto_ts_decorate([
 });
 
 // EXTERNAL MODULE: external "@ptc-org/nestjs-query-graphql"
-var nestjs_query_graphql_ = __webpack_require__(14);
+var nestjs_query_graphql_ = __webpack_require__(15);
 ;// ../../libs/database/src/lib/interfaces/config.dto.ts
 function config_dto_ts_decorate(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -17584,7 +17590,7 @@ CarColorEntity = car_color_entity_ts_decorate([
 ], CarColorEntity);
 
 // EXTERNAL MODULE: external "@nestjs/config"
-var config_ = __webpack_require__(6);
+var config_ = __webpack_require__(7);
 ;// ../../libs/database/src/lib/database.module.ts
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
@@ -18500,7 +18506,7 @@ SharedCustomerModule = shared_customer_module_ts_decorate([
 
 
 // EXTERNAL MODULE: external "@nestjs/apollo"
-var apollo_ = __webpack_require__(15);
+var apollo_ = __webpack_require__(16);
 ;// ../../libs/database/src/lib/coupon/common-coupon.service.ts
 function common_coupon_service_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
@@ -19649,11 +19655,11 @@ var GeoProvider = /*#__PURE__*/ function(GeoProvider) {
 });
 
 // EXTERNAL MODULE: external "@nestjs/axios"
-var axios_ = __webpack_require__(16);
+var axios_ = __webpack_require__(17);
 ;// external "@googlemaps/places"
 const places_namespaceObject = require("@googlemaps/places");
-;// external "fs"
-const external_fs_namespaceObject = require("fs");
+// EXTERNAL MODULE: external "fs"
+var external_fs_ = __webpack_require__(18);
 ;// ../../libs/database/src/lib/config/shared-configuration.service.ts
 function shared_configuration_service_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
@@ -19794,13 +19800,13 @@ var SharedConfigurationService = /*#__PURE__*/ function() {
                 switch(_state.label){
                     case 0:
                         configAddress = process.cwd() + "/config/config." + ((_process_env_NODE_ENV = process.env.NODE_ENV) != null ? _process_env_NODE_ENV : 'production') + ".json";
-                        if (!external_fs_namespaceObject.existsSync(configAddress)) return [
+                        if (!external_fs_.existsSync(configAddress)) return [
                             3,
                             2
                         ];
                         return [
                             4,
-                            external_fs_namespaceObject.promises.readFile(configAddress, {
+                            external_fs_.promises.readFile(configAddress, {
                                 encoding: 'utf-8'
                             })
                         ];
@@ -19808,7 +19814,7 @@ var SharedConfigurationService = /*#__PURE__*/ function() {
                         file = _state.sent();
                         config = JSON.parse(file);
                         firebaseKeyFileAddress = process.cwd() + "/config/" + config.firebaseProjectPrivateKey;
-                        if (config.firebaseProjectPrivateKey != null && external_fs_namespaceObject.existsSync(firebaseKeyFileAddress)) {
+                        if (config.firebaseProjectPrivateKey != null && external_fs_.existsSync(firebaseKeyFileAddress)) {
                             config.purchaseCode = 'RESTRICTED';
                             config.firebaseProjectPrivateKey = 'RESTRICTED';
                             return [
@@ -19842,7 +19848,7 @@ SharedConfigurationService = shared_configuration_service_ts_decorate([
 ;// external "h3-js"
 const external_h3_js_namespaceObject = require("h3-js");
 // EXTERNAL MODULE: external "class-transformer"
-var external_class_transformer_ = __webpack_require__(17);
+var external_class_transformer_ = __webpack_require__(19);
 ;// ../../libs/database/src/lib/redis/models/driver-redis-snapshot.ts
 function driver_redis_snapshot_ts_decorate(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -19912,7 +19918,7 @@ var PayoutAccountRedisSnapshot = function PayoutAccountRedisSnapshot() {
 var REDIS = Symbol('REDIS');
 
 // EXTERNAL MODULE: external "redis"
-var external_redis_ = __webpack_require__(18);
+var external_redis_ = __webpack_require__(20);
 ;// ../../libs/database/src/lib/redis/models/driver-ephemeral-message-snapshot.ts
 function driver_ephemeral_message_snapshot_ts_decorate(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -25959,7 +25965,7 @@ GoogleGeoService = google_geo_service_ts_decorate([
 ], GoogleGeoService);
 
 // EXTERNAL MODULE: external "rxjs"
-var external_rxjs_ = __webpack_require__(19);
+var external_rxjs_ = __webpack_require__(21);
 ;// ../../libs/database/src/lib/geo/nominitam-geo.service.ts
 function nominitam_geo_service_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
@@ -26839,7 +26845,7 @@ GeoModule = geo_module_ts_decorate([
 
 
 // EXTERNAL MODULE: external "firebase-admin"
-var external_firebase_admin_ = __webpack_require__(20);
+var external_firebase_admin_ = __webpack_require__(22);
 ;// ../../libs/database/src/lib/order/firebase-notification-service/driver-notification.service.ts
 function driver_notification_service_asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
@@ -32051,7 +32057,7 @@ var BetterConfigService = /*#__PURE__*/ function() {
                 switch(_state.label){
                     case 0:
                         configAddress = "" + process.cwd() + "/config/dispatch-config.json";
-                        if (!(0,external_fs_namespaceObject.existsSync)(configAddress)) return [
+                        if (!(0,external_fs_.existsSync)(configAddress)) return [
                             3,
                             2
                         ];
@@ -35692,7 +35698,7 @@ const external_multer_namespaceObject = require("multer");
 const external_sharp_namespaceObject = require("sharp");
 var external_sharp_default = /*#__PURE__*/__webpack_require__.n(external_sharp_namespaceObject);
 // EXTERNAL MODULE: external "path"
-var external_path_ = __webpack_require__(21);
+var external_path_ = __webpack_require__(23);
 ;// ../../libs/database/src/lib/storage/storage.port.ts
 var STORAGE = Symbol('STORAGE');
 var StoragePort = function StoragePort() {
@@ -37609,79 +37615,85 @@ StorageModule = storage_module_ts_decorate([
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ ((module) => {
 
 module.exports = require("typeorm");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ ((module) => {
 
 module.exports = require("proper-url-join");
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ ((module) => {
 
 module.exports = require("license-verify");
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ ((module) => {
 
 module.exports = require("@ptc-org/nestjs-query-graphql");
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/apollo");
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/axios");
 
 /***/ }),
-/* 17 */
-/***/ ((module) => {
-
-module.exports = require("class-transformer");
-
-/***/ }),
 /* 18 */
 /***/ ((module) => {
 
-module.exports = require("redis");
+module.exports = require("fs");
 
 /***/ }),
 /* 19 */
 /***/ ((module) => {
 
-module.exports = require("rxjs");
+module.exports = require("class-transformer");
 
 /***/ }),
 /* 20 */
 /***/ ((module) => {
 
-module.exports = require("firebase-admin");
+module.exports = require("redis");
 
 /***/ }),
 /* 21 */
 /***/ ((module) => {
 
-module.exports = require("path");
+module.exports = require("rxjs");
 
 /***/ }),
 /* 22 */
 /***/ ((module) => {
 
-module.exports = require("@sentry/nestjs/setup");
+module.exports = require("firebase-admin");
 
 /***/ }),
 /* 23 */
+/***/ ((module) => {
+
+module.exports = require("path");
+
+/***/ }),
+/* 24 */
+/***/ ((module) => {
+
+module.exports = require("@sentry/nestjs/setup");
+
+/***/ }),
+/* 25 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37694,12 +37706,12 @@ Object.defineProperty(exports, "AnnouncementsModule", ({
         return AnnouncementsModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _announcementresolver = __webpack_require__(24);
-const _announcementservice = __webpack_require__(26);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _announcementresolver = __webpack_require__(26);
+const _announcementservice = __webpack_require__(28);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
 let AnnouncementsModule = class AnnouncementsModule {
 };
 AnnouncementsModule = _ts_decorate._([
@@ -37718,7 +37730,7 @@ AnnouncementsModule = _ts_decorate._([
 
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37731,11 +37743,11 @@ Object.defineProperty(exports, "AnnouncementResolver", ({
         return AnnouncementResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _announcementdto = __webpack_require__(25);
-const _announcementservice = __webpack_require__(26);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _announcementdto = __webpack_require__(27);
+const _announcementservice = __webpack_require__(28);
 let AnnouncementResolver = class AnnouncementResolver {
     constructor(announcementService){
         this.announcementService = announcementService;
@@ -37762,7 +37774,7 @@ AnnouncementResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37775,11 +37787,11 @@ Object.defineProperty(exports, "AnnouncementDTO", ({
         return AnnouncementDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let AnnouncementDTO = class AnnouncementDTO {
 };
 _ts_decorate._([
@@ -37844,7 +37856,7 @@ AnnouncementDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37857,13 +37869,13 @@ Object.defineProperty(exports, "AnnouncementService", ({
         return AnnouncementService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
 let AnnouncementService = class AnnouncementService {
     constructor(announcementRepository){
         this.announcementRepository = announcementRepository;
@@ -37892,13 +37904,13 @@ AnnouncementService = _ts_decorate._([
 
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ ((module) => {
 
 module.exports = require("@swc/helpers/_/_ts_param");
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37911,18 +37923,18 @@ Object.defineProperty(exports, "AuthModule", ({
         return AuthModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _jwt = __webpack_require__(29);
-const _passport = __webpack_require__(30);
-const _drivermodule = __webpack_require__(31);
-const _ordermodule = __webpack_require__(46);
-const _authresolver = __webpack_require__(55);
-const _authservice = __webpack_require__(60);
-const _jwtstrategy = __webpack_require__(65);
-const _database = __webpack_require__(10);
-const _licenseverify = __webpack_require__(13);
-const _typeorm = __webpack_require__(9);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _jwt = __webpack_require__(31);
+const _passport = __webpack_require__(32);
+const _drivermodule = __webpack_require__(33);
+const _ordermodule = __webpack_require__(48);
+const _authresolver = __webpack_require__(57);
+const _authservice = __webpack_require__(62);
+const _jwtstrategy = __webpack_require__(67);
+const _database = __webpack_require__(11);
+const _licenseverify = __webpack_require__(14);
+const _typeorm = __webpack_require__(10);
 let AuthModule = class AuthModule {
     static async register() {
         const modules = [
@@ -37968,19 +37980,19 @@ AuthModule = _ts_decorate._([
 
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/jwt");
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ ((module) => {
 
 module.exports = require("@nestjs/passport");
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -37993,15 +38005,15 @@ Object.defineProperty(exports, "DriverModule", ({
         return DriverModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _driverservice = __webpack_require__(32);
-const _uploadmodule = __webpack_require__(34);
-const _timesheetmodule = __webpack_require__(37);
-const _driverresolver = __webpack_require__(38);
-const _cronjobservice = __webpack_require__(45);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _driverservice = __webpack_require__(34);
+const _uploadmodule = __webpack_require__(36);
+const _timesheetmodule = __webpack_require__(39);
+const _driverresolver = __webpack_require__(40);
+const _cronjobservice = __webpack_require__(47);
 let DriverModule = class DriverModule {
 };
 DriverModule = _ts_decorate._([
@@ -38028,7 +38040,7 @@ DriverModule = _ts_decorate._([
 
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38041,15 +38053,15 @@ Object.defineProperty(exports, "DriverService", ({
         return DriverService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _database = __webpack_require__(10);
-const _typeorm = __webpack_require__(11);
-const _typeorm1 = __webpack_require__(9);
-const _timesheetservice = __webpack_require__(33);
-const _apollo = __webpack_require__(15);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _database = __webpack_require__(11);
+const _typeorm = __webpack_require__(12);
+const _typeorm1 = __webpack_require__(10);
+const _timesheetservice = __webpack_require__(35);
+const _apollo = __webpack_require__(16);
 let DriverService = class DriverService {
     constructor(driverRepository, taxiOrderRepository, activeOrderRedisService, driverRedisService, serviceRedisService, timesheetService, pubsub){
         this.driverRepository = driverRepository;
@@ -38377,7 +38389,7 @@ DriverService = _ts_decorate._([
 
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38390,13 +38402,13 @@ Object.defineProperty(exports, "TimesheetService", ({
         return TimesheetService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
 let TimesheetService = class TimesheetService {
     constructor(timesheetRepository){
         this.timesheetRepository = timesheetRepository;
@@ -38436,7 +38448,7 @@ TimesheetService = _ts_decorate._([
 
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38449,12 +38461,12 @@ Object.defineProperty(exports, "UploadModule", ({
         return UploadModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _nestjsquerytypeorm = __webpack_require__(35);
-const _common = __webpack_require__(1);
-const _database = __webpack_require__(10);
-const _mediadto = __webpack_require__(36);
+const _ts_decorate = __webpack_require__(5);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _nestjsquerytypeorm = __webpack_require__(37);
+const _common = __webpack_require__(2);
+const _database = __webpack_require__(11);
+const _mediadto = __webpack_require__(38);
 let UploadModule = class UploadModule {
 };
 UploadModule = _ts_decorate._([
@@ -38496,13 +38508,13 @@ UploadModule = _ts_decorate._([
 
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ ((module) => {
 
 module.exports = require("@ptc-org/nestjs-query-typeorm");
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38515,10 +38527,10 @@ Object.defineProperty(exports, "MediaDTO", ({
         return MediaDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let MediaDTO = class MediaDTO {
 };
 _ts_decorate._([
@@ -38541,7 +38553,7 @@ MediaDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38554,11 +38566,11 @@ Object.defineProperty(exports, "TimesheetModule", ({
         return TimesheetModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _timesheetservice = __webpack_require__(33);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _timesheetservice = __webpack_require__(35);
 let TimesheetModule = class TimesheetModule {
 };
 TimesheetModule = _ts_decorate._([
@@ -38579,7 +38591,7 @@ TimesheetModule = _ts_decorate._([
 
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38592,19 +38604,19 @@ Object.defineProperty(exports, "DriverResolver", ({
         return DriverResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
-const _driverservice = __webpack_require__(32);
-const _common = __webpack_require__(1);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _authenticateduser = __webpack_require__(40);
-const _driverperformancedto = __webpack_require__(41);
-const _driverdto = __webpack_require__(42);
-const _updatedriverofferfilterinput = __webpack_require__(43);
-const _servicedto = __webpack_require__(44);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
+const _driverservice = __webpack_require__(34);
+const _common = __webpack_require__(2);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _authenticateduser = __webpack_require__(42);
+const _driverperformancedto = __webpack_require__(43);
+const _driverdto = __webpack_require__(44);
+const _updatedriverofferfilterinput = __webpack_require__(45);
+const _servicedto = __webpack_require__(46);
 let DriverResolver = class DriverResolver {
     constructor(context, driverService){
         this.context = context;
@@ -38724,7 +38736,7 @@ DriverResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38745,11 +38757,11 @@ _export(exports, {
         return GqlOptionalAuthGuard;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _graphql = __webpack_require__(7);
-const _passport = __webpack_require__(30);
-const _apollo = __webpack_require__(15);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _graphql = __webpack_require__(8);
+const _passport = __webpack_require__(32);
+const _apollo = __webpack_require__(16);
 let GqlAuthGuard = class GqlAuthGuard extends (0, _passport.AuthGuard)('jwt') {
     getRequest(context) {
         const ctx = _graphql.GqlExecutionContext.create(context).getContext();
@@ -38801,7 +38813,7 @@ GqlOptionalAuthGuard = _ts_decorate._([
 
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38814,8 +38826,8 @@ Object.defineProperty(exports, "AuthenticatedDriverDTO", ({
         return AuthenticatedDriverDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _graphql = __webpack_require__(8);
 let AuthenticatedDriverDTO = class AuthenticatedDriverDTO {
 };
 AuthenticatedDriverDTO = _ts_decorate._([
@@ -38824,7 +38836,7 @@ AuthenticatedDriverDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38837,9 +38849,9 @@ Object.defineProperty(exports, "DriverPerformanceDTO", ({
         return DriverPerformanceDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let DriverPerformanceDTO = class DriverPerformanceDTO {
 };
 _ts_decorate._([
@@ -38868,7 +38880,7 @@ DriverPerformanceDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38881,11 +38893,11 @@ Object.defineProperty(exports, "DriverDTO", ({
         return DriverDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _database = __webpack_require__(11);
 let DriverDTO = class DriverDTO {
 };
 _ts_decorate._([
@@ -38934,7 +38946,7 @@ DriverDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38947,9 +38959,9 @@ Object.defineProperty(exports, "UpdateDriverOfferFilterInput", ({
         return UpdateDriverOfferFilterInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let UpdateDriverOfferFilterInput = class UpdateDriverOfferFilterInput {
 };
 _ts_decorate._([
@@ -38972,7 +38984,7 @@ UpdateDriverOfferFilterInput = _ts_decorate._([
 
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -38985,10 +38997,10 @@ Object.defineProperty(exports, "ServiceDTO", ({
         return ServiceDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let ServiceDTO = class ServiceDTO {
 };
 _ts_decorate._([
@@ -39013,7 +39025,7 @@ ServiceDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -39026,14 +39038,14 @@ Object.defineProperty(exports, "CronJobService", ({
         return CronJobService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _schedule = __webpack_require__(8);
-const _driverservice = __webpack_require__(32);
-const _database = __webpack_require__(10);
-const _redis = __webpack_require__(18);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _schedule = __webpack_require__(9);
+const _driverservice = __webpack_require__(34);
+const _database = __webpack_require__(11);
+const _redis = __webpack_require__(20);
 let CronJobService = class CronJobService {
     constructor(driverService, redisService){
         this.driverService = driverService;
@@ -39071,7 +39083,7 @@ CronJobService = _ts_decorate._([
 
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -39084,15 +39096,15 @@ Object.defineProperty(exports, "OrderModule", ({
         return OrderModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _orderresolver = __webpack_require__(47);
-const _drivermodule = __webpack_require__(31);
-const _orderservice = __webpack_require__(48);
-const _ordersubscriptionservice = __webpack_require__(54);
-const _axios = __webpack_require__(16);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _orderresolver = __webpack_require__(49);
+const _drivermodule = __webpack_require__(33);
+const _orderservice = __webpack_require__(50);
+const _ordersubscriptionservice = __webpack_require__(56);
+const _axios = __webpack_require__(17);
 let OrderModule = class OrderModule {
 };
 OrderModule = _ts_decorate._([
@@ -39141,7 +39153,7 @@ OrderModule = _ts_decorate._([
 
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -39154,20 +39166,20 @@ Object.defineProperty(exports, "OrderResolver", ({
         return OrderResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
-const _authenticateduser = __webpack_require__(40);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _orderservice = __webpack_require__(48);
-const _riderreviewinput = __webpack_require__(49);
-const _updatestatusdto = __webpack_require__(50);
-const _activeorderdto = __webpack_require__(51);
-const _pastorderdto = __webpack_require__(52);
-const _cancelreasondto = __webpack_require__(53);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
+const _authenticateduser = __webpack_require__(42);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _orderservice = __webpack_require__(50);
+const _riderreviewinput = __webpack_require__(51);
+const _updatestatusdto = __webpack_require__(52);
+const _activeorderdto = __webpack_require__(53);
+const _pastorderdto = __webpack_require__(54);
+const _cancelreasondto = __webpack_require__(55);
 let OrderResolver = class OrderResolver {
     constructor(context, orderService, driverRedisService, orderRedisService){
         this.context = context;
@@ -39418,7 +39430,7 @@ OrderResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -39431,16 +39443,16 @@ Object.defineProperty(exports, "OrderService", ({
         return OrderService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _axios = __webpack_require__(16);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _apollo = __webpack_require__(15);
-const _rxjs = __webpack_require__(19);
-const _typeorm1 = __webpack_require__(11);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _axios = __webpack_require__(17);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _apollo = __webpack_require__(16);
+const _rxjs = __webpack_require__(21);
+const _typeorm1 = __webpack_require__(12);
 let OrderService = class OrderService {
     constructor(orderRepository, activityRepository, paymentRepository, reviewRepository, driverRepository, riderRepository, cancelReasonRepository, googleServices, sharedOrderService, rideOfferRedisService, activeOrderRedisService, driverRedisService, riderRedisService, pubsub, httpService, riderNotificationService){
         this.orderRepository = orderRepository;
@@ -39943,7 +39955,7 @@ OrderService = _ts_decorate._([
 
 
 /***/ }),
-/* 49 */
+/* 51 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -39956,9 +39968,9 @@ Object.defineProperty(exports, "RiderReviewInput", ({
         return RiderReviewInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let RiderReviewInput = class RiderReviewInput {
 };
 _ts_decorate._([
@@ -39983,7 +39995,7 @@ RiderReviewInput = _ts_decorate._([
 
 
 /***/ }),
-/* 50 */
+/* 52 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -39996,10 +40008,10 @@ Object.defineProperty(exports, "UpdateStatusDTO", ({
         return UpdateStatusDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let UpdateStatusDTO = class UpdateStatusDTO {
 };
 _ts_decorate._([
@@ -40036,7 +40048,7 @@ UpdateStatusDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 51 */
+/* 53 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40057,10 +40069,10 @@ _export(exports, {
         return ActiveOrderRiderDTO;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let ActiveOrderRiderDTO = class ActiveOrderRiderDTO {
 };
 _ts_decorate._([
@@ -40222,7 +40234,7 @@ ActiveOrderDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40243,10 +40255,10 @@ _export(exports, {
         return PastOrderRiderDTO;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let PastOrderRiderDTO = class PastOrderRiderDTO {
 };
 _ts_decorate._([
@@ -40378,7 +40390,7 @@ PastOrderDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40391,9 +40403,9 @@ Object.defineProperty(exports, "OrderCancelReasonDTO", ({
         return OrderCancelReasonDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let OrderCancelReasonDTO = class OrderCancelReasonDTO {
 };
 _ts_decorate._([
@@ -40410,7 +40422,7 @@ OrderCancelReasonDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40423,13 +40435,13 @@ Object.defineProperty(exports, "OrderSubscriptionService", ({
         return OrderSubscriptionService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
-const _classtransformer = __webpack_require__(17);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
+const _classtransformer = __webpack_require__(19);
 let OrderSubscriptionService = class OrderSubscriptionService {
     constructor(pubsub){
         this.pubsub = pubsub;
@@ -40473,7 +40485,7 @@ OrderSubscriptionService = _ts_decorate._([
 
 
 /***/ }),
-/* 55 */
+/* 57 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40486,30 +40498,30 @@ Object.defineProperty(exports, "AuthResolver", ({
         return AuthResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _graphql = __webpack_require__(7);
-const _jwt = __webpack_require__(29);
-const _driverservice = __webpack_require__(32);
-const _logindto = __webpack_require__(56);
-const _logininput = __webpack_require__(57);
-const _database = __webpack_require__(10);
-const _driverdto = __webpack_require__(42);
-const _common = __webpack_require__(1);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _authenticateduser = __webpack_require__(40);
-const _apollo = __webpack_require__(15);
-const _firebaseadmin = __webpack_require__(20);
-const _verificationdto = __webpack_require__(58);
-const _verifynumberdto = __webpack_require__(59);
-const _authservice = __webpack_require__(60);
-const _driverdocumentdto = __webpack_require__(61);
-const _typeorm = __webpack_require__(11);
-const _typeorm1 = __webpack_require__(9);
-const _carmodeldto = __webpack_require__(62);
-const _carcolordto = __webpack_require__(63);
-const _completeregistrationinput = __webpack_require__(64);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _graphql = __webpack_require__(8);
+const _jwt = __webpack_require__(31);
+const _driverservice = __webpack_require__(34);
+const _logindto = __webpack_require__(58);
+const _logininput = __webpack_require__(59);
+const _database = __webpack_require__(11);
+const _driverdto = __webpack_require__(44);
+const _common = __webpack_require__(2);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _authenticateduser = __webpack_require__(42);
+const _apollo = __webpack_require__(16);
+const _firebaseadmin = __webpack_require__(22);
+const _verificationdto = __webpack_require__(60);
+const _verifynumberdto = __webpack_require__(61);
+const _authservice = __webpack_require__(62);
+const _driverdocumentdto = __webpack_require__(63);
+const _typeorm = __webpack_require__(12);
+const _typeorm1 = __webpack_require__(10);
+const _carmodeldto = __webpack_require__(64);
+const _carcolordto = __webpack_require__(65);
+const _completeregistrationinput = __webpack_require__(66);
 let AuthResolver = class AuthResolver {
     constructor(driverService, sharedDriverService, driverDocumentRepository, carModelRepository, carColorRepository, jwtService, userContext, authService){
         this.driverService = driverService;
@@ -40776,7 +40788,7 @@ AuthResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 56 */
+/* 58 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40789,9 +40801,9 @@ Object.defineProperty(exports, "LoginDTO", ({
         return LoginDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let LoginDTO = class LoginDTO {
 };
 _ts_decorate._([
@@ -40806,7 +40818,7 @@ LoginDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 57 */
+/* 59 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40819,9 +40831,9 @@ Object.defineProperty(exports, "LoginInput", ({
         return LoginInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let LoginInput = class LoginInput {
 };
 _ts_decorate._([
@@ -40834,7 +40846,7 @@ LoginInput = _ts_decorate._([
 
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40847,10 +40859,10 @@ Object.defineProperty(exports, "VerificationDto", ({
         return VerificationDto;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _driverdto = __webpack_require__(42);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _driverdto = __webpack_require__(44);
 let VerificationDto = class VerificationDto {
 };
 _ts_decorate._([
@@ -40883,7 +40895,7 @@ VerificationDto = _ts_decorate._([
 
 
 /***/ }),
-/* 59 */
+/* 61 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40896,9 +40908,9 @@ Object.defineProperty(exports, "VerifyNumberDto", ({
         return VerifyNumberDto;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let VerifyNumberDto = class VerifyNumberDto {
 };
 _ts_decorate._([
@@ -40920,7 +40932,7 @@ VerifyNumberDto = _ts_decorate._([
 
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -40933,16 +40945,16 @@ Object.defineProperty(exports, "AuthService", ({
         return AuthService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _jwt = __webpack_require__(29);
-const _database = __webpack_require__(10);
-const _apollo = __webpack_require__(15);
-const _typeorm = __webpack_require__(9);
-const _typeorm1 = __webpack_require__(11);
-const _driverservice = __webpack_require__(32);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _jwt = __webpack_require__(31);
+const _database = __webpack_require__(11);
+const _apollo = __webpack_require__(16);
+const _typeorm = __webpack_require__(10);
+const _typeorm1 = __webpack_require__(12);
+const _driverservice = __webpack_require__(34);
 let AuthService = class AuthService {
     constructor(driverService, jwtService, smsService, authRedisService, driverRepository, serviceRepository, mediaRepository, driverServiceRepository, driverToDocumentRepository){
         this.driverService = driverService;
@@ -41075,7 +41087,7 @@ AuthService = _ts_decorate._([
 
 
 /***/ }),
-/* 61 */
+/* 63 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41088,10 +41100,10 @@ Object.defineProperty(exports, "DriverDocumentDTO", ({
         return DriverDocumentDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _nestjsquerygraphql = __webpack_require__(14);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _nestjsquerygraphql = __webpack_require__(15);
 let DriverDocumentDTO = class DriverDocumentDTO {
 };
 _ts_decorate._([
@@ -41128,7 +41140,7 @@ DriverDocumentDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41141,10 +41153,10 @@ Object.defineProperty(exports, "CarModelDTO", ({
         return CarModelDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let CarModelDTO = class CarModelDTO {
 };
 _ts_decorate._([
@@ -41161,7 +41173,7 @@ CarModelDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 63 */
+/* 65 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41174,10 +41186,10 @@ Object.defineProperty(exports, "CarColorDTO", ({
         return CarColorDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let CarColorDTO = class CarColorDTO {
 };
 _ts_decorate._([
@@ -41196,7 +41208,7 @@ CarColorDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 64 */
+/* 66 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41217,10 +41229,10 @@ _export(exports, {
         return DocumentPairInput;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let DocumentPairInput = class DocumentPairInput {
 };
 _ts_decorate._([
@@ -41314,7 +41326,7 @@ CompleteRegistrationInput = _ts_decorate._([
 
 
 /***/ }),
-/* 65 */
+/* 67 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41335,12 +41347,12 @@ _export(exports, {
         return validateToken;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _passportjwt = __webpack_require__(66);
-const _passport = __webpack_require__(30);
-const _common = __webpack_require__(1);
-const _jwtdecode = __webpack_require__(67);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _passportjwt = __webpack_require__(68);
+const _passport = __webpack_require__(32);
+const _common = __webpack_require__(2);
+const _jwtdecode = __webpack_require__(69);
 let JwtStrategy = class JwtStrategy extends (0, _passport.PassportStrategy)(_passportjwt.Strategy, 'jwt') {
     constructor(){
         super({
@@ -41370,19 +41382,19 @@ async function validateToken(token) {
 
 
 /***/ }),
-/* 66 */
+/* 68 */
 /***/ ((module) => {
 
 module.exports = require("passport-jwt");
 
 /***/ }),
-/* 67 */
+/* 69 */
 /***/ ((module) => {
 
 module.exports = require("jwt-decode");
 
 /***/ }),
-/* 68 */
+/* 70 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41395,11 +41407,11 @@ Object.defineProperty(exports, "ChatModule", ({
         return ChatModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _database = __webpack_require__(10);
-const _chatresolver = __webpack_require__(69);
-const _chatservice = __webpack_require__(70);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _database = __webpack_require__(11);
+const _chatresolver = __webpack_require__(71);
+const _chatservice = __webpack_require__(72);
 let ChatModule = class ChatModule {
 };
 ChatModule = _ts_decorate._([
@@ -41417,7 +41429,7 @@ ChatModule = _ts_decorate._([
 
 
 /***/ }),
-/* 69 */
+/* 71 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41430,12 +41442,12 @@ Object.defineProperty(exports, "ChatResolver", ({
         return ChatResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _graphql = __webpack_require__(7);
-const _chatservice = __webpack_require__(70);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _graphql = __webpack_require__(8);
+const _chatservice = __webpack_require__(72);
+const _database = __webpack_require__(11);
 let ChatResolver = class ChatResolver {
     constructor(chatService){
         this.chatService = chatService;
@@ -41484,7 +41496,7 @@ ChatResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41497,10 +41509,10 @@ Object.defineProperty(exports, "ChatService", ({
         return ChatService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _database = __webpack_require__(10);
-const _common = __webpack_require__(1);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _database = __webpack_require__(11);
+const _common = __webpack_require__(2);
 let ChatService = class ChatService {
     constructor(activeOrderRedisService, activeOrderRiderRedisService, driverRedisService, pubsub, riderNotificationService){
         this.activeOrderRedisService = activeOrderRedisService;
@@ -41559,7 +41571,7 @@ ChatService = _ts_decorate._([
 
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41572,14 +41584,14 @@ Object.defineProperty(exports, "ComplaintModule", ({
         return ComplaintModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _nestjsquerytypeorm = __webpack_require__(35);
-const _common = __webpack_require__(1);
-const _database = __webpack_require__(10);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _complaintdto = __webpack_require__(72);
-const _complaintinput = __webpack_require__(73);
+const _ts_decorate = __webpack_require__(5);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _nestjsquerytypeorm = __webpack_require__(37);
+const _common = __webpack_require__(2);
+const _database = __webpack_require__(11);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _complaintdto = __webpack_require__(74);
+const _complaintinput = __webpack_require__(75);
 let ComplaintModule = class ComplaintModule {
 };
 ComplaintModule = _ts_decorate._([
@@ -41622,7 +41634,7 @@ ComplaintModule = _ts_decorate._([
 
 
 /***/ }),
-/* 72 */
+/* 74 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41635,11 +41647,11 @@ Object.defineProperty(exports, "ComplaintDTO", ({
         return ComplaintDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let ComplaintDTO = class ComplaintDTO {
 };
 _ts_decorate._([
@@ -41670,7 +41682,7 @@ ComplaintDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 73 */
+/* 75 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41683,10 +41695,10 @@ Object.defineProperty(exports, "ComplaintInput", ({
         return ComplaintInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let ComplaintInput = class ComplaintInput {
 };
 _ts_decorate._([
@@ -41721,7 +41733,7 @@ ComplaintInput = _ts_decorate._([
 
 
 /***/ }),
-/* 74 */
+/* 76 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41734,11 +41746,11 @@ Object.defineProperty(exports, "DriverApiSetupNotFoundController", ({
         return DriverApiSetupNotFoundController;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _express = __webpack_require__(75);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _express = __webpack_require__(77);
 let DriverApiSetupNotFoundController = class DriverApiSetupNotFoundController {
     main(res) {
         return '🚧 This API is not set up yet. Please check back later.';
@@ -41772,13 +41784,13 @@ DriverApiSetupNotFoundController = _ts_decorate._([
 
 
 /***/ }),
-/* 75 */
+/* 77 */
 /***/ ((module) => {
 
 module.exports = require("express");
 
 /***/ }),
-/* 76 */
+/* 78 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -41791,18 +41803,18 @@ Object.defineProperty(exports, "DriverAPIController", ({
         return DriverAPIController;
     }
 }));
-const _interop_require_default = __webpack_require__(77);
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _restoptionaljwtauthguard = __webpack_require__(78);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
-const _properurljoin = /*#__PURE__*/ _interop_require_default._(__webpack_require__(12));
-const _express = __webpack_require__(75);
-const _packagejson = __webpack_require__(79);
+const _interop_require_default = __webpack_require__(79);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _restoptionaljwtauthguard = __webpack_require__(80);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
+const _properurljoin = /*#__PURE__*/ _interop_require_default._(__webpack_require__(13));
+const _express = __webpack_require__(77);
+const _packagejson = __webpack_require__(81);
 let DriverAPIController = class DriverAPIController {
     constructor(mediaRepository, driverDocumentRepository, driverRepository, paymentRepository, cryptoService, sharedDriverService){
         this.mediaRepository = mediaRepository;
@@ -42004,13 +42016,13 @@ DriverAPIController = _ts_decorate._([
 
 
 /***/ }),
-/* 77 */
+/* 79 */
 /***/ ((module) => {
 
 module.exports = require("@swc/helpers/_/_interop_require_default");
 
 /***/ }),
-/* 78 */
+/* 80 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42023,9 +42035,9 @@ Object.defineProperty(exports, "RestOptionalJwtAuthGuard", ({
         return RestOptionalJwtAuthGuard;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _passport = __webpack_require__(30);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _passport = __webpack_require__(32);
 let RestOptionalJwtAuthGuard = class RestOptionalJwtAuthGuard extends (0, _passport.AuthGuard)('jwt') {
     canActivate(context) {
         return super.canActivate(context);
@@ -42040,13 +42052,13 @@ RestOptionalJwtAuthGuard = _ts_decorate._([
 
 
 /***/ }),
-/* 79 */
+/* 81 */
 /***/ ((module) => {
 
 module.exports = /*#__PURE__*/JSON.parse('{"name":"bettersuite","version":"5.1.4","license":"MIT","scripts":{"ng":"nx","nx":"nx","start":"ts-node src/index.ts","build":"ng build","test":"ng test","lint":"nx workspace-lint && ng lint","e2e":"ng e2e","affected:apps":"nx affected:apps","affected:libs":"nx affected:libs","affected:build":"nx affected:build","affected:e2e":"nx affected:e2e","affected:test":"nx affected:test","affected:lint":"nx affected:lint","affected:dep-graph":"nx affected:dep-graph","affected":"nx affected","format":"nx format:write","format:write":"nx format:write","format:check":"nx format:check","update":"nx migrate latest","workspace-generator":"nx workspace-generator","dep-graph":"nx dep-graph","help":"nx help","lint:fix":"eslint \'./**/*.{ts,tsx}\' --fix","i18n:extract":"ngx-translate-extract --input ./apps/admin-panel/src --output ./apps/admin-panel/src/assets/i18n/{en,es,bn,de,hi,ko,id,ja,pt,ru,ur,zh,fr,ar,hy}.json --clean --format namespaced-json","typeorm":"node --require ts-node/register ./node_modules/typeorm/cli.js","semantic-release":"semantic-release","publish-frontend":"bash tools/scripts/docker-frontend-publish.sh","publish-backend":"bash tools/scripts/docker-backend-publish.sh","inject-google-maps-key":"bash tools/scripts/inject-google-maps-key.sh","client-setup":"bash tools/scripts/client_setup/client-setup.sh","build-apks":"bash tools/scripts/build-apks.sh","smoke-test":"bash tools/scripts/backend-smoke-test.sh","gql-stats":"bash tools/scripts/gql-stats.sh","generate-license":"node scripts/generate-license.js"},"private":true,"dependencies":{"@angular/animations":"20.1.4","@angular/cdk":"20.1.4","@angular/common":"20.1.4","@angular/compiler":"20.1.4","@angular/core":"20.1.4","@angular/forms":"20.1.4","@angular/google-maps":"20.1.4","@angular/platform-browser":"20.1.4","@angular/platform-browser-dynamic":"20.1.4","@angular/router":"20.1.4","@angular/service-worker":"20.1.4","@ant-design/icons-angular":"^20.0.0","@antv/g2":"^4.2.10","@apollo/client":"^3.13.8","@apollo/server":"^4.12.2","@aws-sdk/client-s3":"^3.886.0","@bull-board/api":"^6.12.0","@bull-board/express":"^6.12.0","@bull-board/nestjs":"^6.12.0","@ctrl/tinycolor":"^4.1.0","@googlemaps/google-maps-services-js":"^3.4.2","@googlemaps/places":"^2.0.1","@googlemaps/routing":"^2.0.1","@ingameltd/payu":"^1.0.5","@nestjs/apollo":"^13.1.0","@nestjs/axios":"^4.0.1","@nestjs/bullmq":"^11.0.3","@nestjs/common":"11.1.5","@nestjs/config":"^4.0.2","@nestjs/core":"11.1.5","@nestjs/graphql":"^13.1.0","@nestjs/jwt":"^11.0.0","@nestjs/passport":"^11.0.5","@nestjs/platform-express":"^11.1.5","@nestjs/schedule":"^6.0.0","@nestjs/serve-static":"^5.0.3","@nestjs/typeorm":"11.0.0","@nestjs/websockets":"^11.1.3","@nx/angular":"21.3.10","@nx/web":"21.3.10","@paypal/checkout-server-sdk":"^1.0.3","@ptc-org/nestjs-query-core":"^9.1.0","@ptc-org/nestjs-query-graphql":"^9.1.0","@ptc-org/nestjs-query-typeorm":"^9.1.0","@redis/json":"^5.8.2","@redis/search":"^5.8.2","@sentry/cli":"^2.50.2","@sentry/nestjs":"^10.0.0","@sentry/profiling-node":"10.0.0","@willsoto/nestjs-prometheus":"^6.0.2","apollo-angular":"^11.0.0","autoprefixer":"^10.4.21","bullmq":"^5.56.9","class-transformer":"0.5.1","class-validator":"0.14.2","core-js":"^3.42.0","dataloader":"^2.2.3","dotenv":"16.5.0","firebase-admin":"^13.4.0","graphql":"^16.11.0","graphql-redis-subscriptions":"^2.7.0","graphql-relay":"^0.10.2","graphql-subscriptions":"^3.0.0","graphql-tools":"^9.0.20","graphql-ws":"^6.0.6","h3-js":"^4.2.1","instamojo-payment-nodejs":"^3.0.0","ioredis":"^5.7.0","json-2-csv":"^4.0.0","jwt-decode":"^4.0.0","license-verify":"0.1.5","mercadopago":"^1.5.17","multer":"^2.0.0","mysql2":"^3.14.3","ng-zorro-antd":"^20.1.0","ngx-timeago":"^3.0.0","node-rsa":"^1.1.1","overshom-wayforpay":"^1.1.0","passport":"^0.7.0","passport-jwt":"^4.0.1","passport-local":"^1.0.0","paystack-node":"^0.3.0","paytmchecksum":"^1.5.1","pdfkit":"^0.17.1","pdfkit-table":"^0.1.99","plivo":"^4.70.0","prom-client":"^15.1.3","proper-url-join":"^2.1.2","razorpay":"^2.9.1","redis":"^5.8.2","reflect-metadata":"^0.2.2","rxjs":"7.8.2","sberbank-acquiring":"^1.2.2","sharp":"^0.34.3","stripe":"^18.4.0","tslib":"^2.6.1","twilio":"^5.6.1","typeorm":"0.3.26","uuid":"^11.1.0","zone.js":"0.15.1"},"devDependencies":{"@angular-devkit/build-angular":"20.1.4","@angular-devkit/core":"20.1.4","@angular-devkit/schematics":"20.1.4","@angular-eslint/eslint-plugin":"20.1.0","@angular-eslint/eslint-plugin-template":"20.1.0","@angular-eslint/template-parser":"20.1.0","@angular/cli":"~20.1.0","@angular/compiler-cli":"20.1.4","@angular/language-service":"20.1.4","@bartholomej/ngx-translate-extract":"^8.0.2","@graphql-codegen/cli":"^5.0.7","@graphql-codegen/introspection":"^4.0.3","@graphql-codegen/typescript":"^4.1.6","@graphql-codegen/typescript-apollo-angular":"^4.0.1","@graphql-codegen/typescript-operations":"^4.6.1","@monodon/rust":"^2.3.0","@nestjs/cli":"^11.0.10","@nestjs/schematics":"11.0.5","@nestjs/testing":"11.1.3","@ngx-translate/core":"^17.0.0","@ngx-translate/http-loader":"^17.0.0","@nx/eslint":"21.3.10","@nx/eslint-plugin":"21.3.10","@nx/jest":"21.3.10","@nx/js":"21.3.10","@nx/node":"21.3.10","@nx/webpack":"21.3.10","@nxrocks/nx-flutter":"^10.0.1","@schematics/angular":"20.1.4","@semantic-release/changelog":"^6.0.3","@semantic-release/commit-analyzer":"^13.0.1","@semantic-release/git":"^10.0.1","@semantic-release/npm":"^12.0.1","@semantic-release/release-notes-generator":"^14.0.3","@swc-node/register":"1.10.10","@swc/cli":"^0.7.8","@swc/core":"1.13.3","@swc/helpers":"0.5.17","@swc/jest":"0.2.39","@tailwindcss/forms":"^0.5.4","@tailwindcss/typography":"^0.5.9","@testcontainers/mysql":"^11.5.1","@testcontainers/redis":"^11.5.1","@types/busboy":"^1.5.0","@types/cron":"^2.0.1","@types/estree":"1.0.1","@types/jest":"30.0.0","@types/multer":"^1.4.12","@types/node":"^24.0.10","@types/passport-jwt":"^4.0.1","@types/paypal__checkout-server-sdk":"^1.0.5","@types/pdfkit":"^0.17.0","@types/proper-url-join":"^2.1.5","@types/supertest":"^6.0.3","conventional-changelog-conventionalcommits":"^9.0.0","eslint":"^9.28.0","eslint-config-prettier":"10.1.5","eslint-plugin-unused-imports":"^4.1.4","jest":"30.0.5","jest-environment-jsdom":"30.0.5","jest-util":"30.0.5","jsonc-eslint-parser":"^2.1.0","ng-packagr":"20.1.0","nx":"21.3.10","postcss":"^8.4.27","postcss-import":"15.1.0","postcss-preset-env":"9.1.0","postcss-url":"10.1.3","prettier":"^3.5.3","supertest":"^7.1.4","swc-loader":"^0.2.6","tailwindcss":"^3.3.3","testcontainers":"^11.5.1","ts-jest":"29.4.0","ts-node":"10.9.2","tslib":"^2.3.0","typescript":"5.8.3","typescript-eslint":"^8.33.0","webpack-cli":"^5.1.4"},"workspaces":["libs/*","apps/*","libs/shop/*"],"overrides":{"typescript":"5.8.3","eslint":"^9.28.0","rxjs":"7.8.2","typeorm":{"redis":"^5.8.2"}},"repository":{"type":"git","url":"https://github.com/ridyio/ridy-monorepo.git"},"publishConfig":{"access":"restricted"}}');
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42059,12 +42071,12 @@ Object.defineProperty(exports, "FeedbacksModule", ({
         return FeedbacksModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _feedbacksservice = __webpack_require__(81);
-const _feedbacksresolver = __webpack_require__(82);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _feedbacksservice = __webpack_require__(83);
+const _feedbacksresolver = __webpack_require__(84);
 let FeedbacksModule = class FeedbacksModule {
 };
 FeedbacksModule = _ts_decorate._([
@@ -42085,7 +42097,7 @@ FeedbacksModule = _ts_decorate._([
 
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42098,13 +42110,13 @@ Object.defineProperty(exports, "FeedbacksService", ({
         return FeedbacksService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _typeorm1 = __webpack_require__(11);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _typeorm1 = __webpack_require__(12);
+const _database = __webpack_require__(11);
 let FeedbacksService = class FeedbacksService {
     constructor(feedbackRepository, driverRepository){
         this.feedbackRepository = feedbackRepository;
@@ -42171,7 +42183,7 @@ FeedbacksService = _ts_decorate._([
 
 
 /***/ }),
-/* 82 */
+/* 84 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42184,15 +42196,15 @@ Object.defineProperty(exports, "FeedbacksResolver", ({
         return FeedbacksResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _graphql = __webpack_require__(7);
-const _feedbacksservice = __webpack_require__(81);
-const _feedbackssummarydto = __webpack_require__(83);
-const _common = __webpack_require__(1);
-const _authenticateduser = __webpack_require__(40);
-const _jwtgqlauthguard = __webpack_require__(39);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _graphql = __webpack_require__(8);
+const _feedbacksservice = __webpack_require__(83);
+const _feedbackssummarydto = __webpack_require__(85);
+const _common = __webpack_require__(2);
+const _authenticateduser = __webpack_require__(42);
+const _jwtgqlauthguard = __webpack_require__(41);
 let FeedbacksResolver = class FeedbacksResolver {
     constructor(feedbacksService, userContext){
         this.feedbacksService = feedbacksService;
@@ -42223,7 +42235,7 @@ FeedbacksResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 83 */
+/* 85 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42236,10 +42248,10 @@ Object.defineProperty(exports, "FeedbacksSummaryDTO", ({
         return FeedbacksSummaryDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _reviewdto = __webpack_require__(84);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _reviewdto = __webpack_require__(86);
 let FeedbacksSummaryDTO = class FeedbacksSummaryDTO {
 };
 _ts_decorate._([
@@ -42278,7 +42290,7 @@ FeedbacksSummaryDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 84 */
+/* 86 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42291,9 +42303,9 @@ Object.defineProperty(exports, "ReviewEntity", ({
         return ReviewEntity;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let ReviewEntity = class ReviewEntity {
 };
 _ts_decorate._([
@@ -42328,7 +42340,7 @@ ReviewEntity = _ts_decorate._([
 
 
 /***/ }),
-/* 85 */
+/* 87 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42341,19 +42353,19 @@ Object.defineProperty(exports, "PayoutModule", ({
         return PayoutModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _payoutaccountdto = __webpack_require__(86);
-const _nestjsquerytypeorm = __webpack_require__(35);
-const _payoutservice = __webpack_require__(90);
-const _payoutresolver = __webpack_require__(91);
-const _walletmodule = __webpack_require__(96);
-const _payoutmethoddto = __webpack_require__(88);
-const _axios = __webpack_require__(16);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _payoutaccountdto = __webpack_require__(88);
+const _nestjsquerytypeorm = __webpack_require__(37);
+const _payoutservice = __webpack_require__(92);
+const _payoutresolver = __webpack_require__(93);
+const _walletmodule = __webpack_require__(98);
+const _payoutmethoddto = __webpack_require__(90);
+const _axios = __webpack_require__(17);
 let PayoutModule = class PayoutModule {
 };
 PayoutModule = _ts_decorate._([
@@ -42435,7 +42447,7 @@ PayoutModule = _ts_decorate._([
 
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42448,14 +42460,14 @@ Object.defineProperty(exports, "PayoutAccountDTO", ({
         return PayoutAccountDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _paymentgatewaydto = __webpack_require__(87);
-const _database = __webpack_require__(10);
-const _payoutmethoddto = __webpack_require__(88);
-const _drivertransactiondto = __webpack_require__(89);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _paymentgatewaydto = __webpack_require__(89);
+const _database = __webpack_require__(11);
+const _payoutmethoddto = __webpack_require__(90);
+const _drivertransactiondto = __webpack_require__(91);
 let PayoutAccountDTO = class PayoutAccountDTO {
 };
 _ts_decorate._([
@@ -42578,7 +42590,7 @@ PayoutAccountDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42591,12 +42603,12 @@ Object.defineProperty(exports, "PaymentGatewayDTO", ({
         return PaymentGatewayDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
-const _mediadto = __webpack_require__(36);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
+const _mediadto = __webpack_require__(38);
 let PaymentGatewayDTO = class PaymentGatewayDTO {
 };
 _ts_decorate._([
@@ -42655,7 +42667,7 @@ PaymentGatewayDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42668,12 +42680,12 @@ Object.defineProperty(exports, "PayoutMethodDTO", ({
         return PayoutMethodDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _mediadto = __webpack_require__(36);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _mediadto = __webpack_require__(38);
 let PayoutMethodDTO = class PayoutMethodDTO {
 };
 _ts_decorate._([
@@ -42729,7 +42741,7 @@ PayoutMethodDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42742,11 +42754,11 @@ Object.defineProperty(exports, "DriverTransactionDTO", ({
         return DriverTransactionDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 let DriverTransactionDTO = class DriverTransactionDTO {
 };
 _ts_decorate._([
@@ -42818,7 +42830,7 @@ DriverTransactionDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42831,16 +42843,16 @@ Object.defineProperty(exports, "PayoutService", ({
         return PayoutService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _rxjs = __webpack_require__(19);
-const _axios = __webpack_require__(16);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _rxjs = __webpack_require__(21);
+const _axios = __webpack_require__(17);
 let PayoutService = class PayoutService {
     constructor(payoutAccountsRepository, payoutMethodRepository, httpService){
         this.payoutAccountsRepository = payoutAccountsRepository;
@@ -42952,7 +42964,7 @@ PayoutService = _ts_decorate._([
 
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -42973,20 +42985,20 @@ _export(exports, {
         return PayoutResolver;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _graphql = __webpack_require__(7);
-const _payoutservice = __webpack_require__(90);
-const _payoutaccountdto = __webpack_require__(86);
-const _common = __webpack_require__(1);
-const _authenticateduser = __webpack_require__(40);
-const _payoutmethoddto = __webpack_require__(88);
-const _topupwalletinput = __webpack_require__(92);
-const _payoutaccountinput = __webpack_require__(93);
-const _getpayoutlinkurlinput = __webpack_require__(94);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _updatepayoutmethodinput = __webpack_require__(95);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _graphql = __webpack_require__(8);
+const _payoutservice = __webpack_require__(92);
+const _payoutaccountdto = __webpack_require__(88);
+const _common = __webpack_require__(2);
+const _authenticateduser = __webpack_require__(42);
+const _payoutmethoddto = __webpack_require__(90);
+const _topupwalletinput = __webpack_require__(94);
+const _payoutaccountinput = __webpack_require__(95);
+const _getpayoutlinkurlinput = __webpack_require__(96);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _updatepayoutmethodinput = __webpack_require__(97);
 let PayoutResolver = class PayoutResolver {
     constructor(payoutService, context){
         this.payoutService = payoutService;
@@ -43110,7 +43122,7 @@ const IntentResultToTopUpWalletStatus = (status)=>{
 
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43134,10 +43146,10 @@ _export(exports, {
         return TopUpWalletStatus;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 var TopUpWalletStatus = /*#__PURE__*/ function(TopUpWalletStatus) {
     TopUpWalletStatus["OK"] = "ok";
     TopUpWalletStatus["Redirect"] = "redirect";
@@ -43224,7 +43236,7 @@ TopUpWalletResponse = _ts_decorate._([
 
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43237,9 +43249,9 @@ Object.defineProperty(exports, "PayoutAccountInput", ({
         return PayoutAccountInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let PayoutAccountInput = class PayoutAccountInput {
 };
 _ts_decorate._([
@@ -43338,7 +43350,7 @@ PayoutAccountInput = _ts_decorate._([
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43351,10 +43363,10 @@ Object.defineProperty(exports, "GetPayoutLinkUrlInput", ({
         return GetPayoutLinkUrlInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _nestjsquerygraphql = __webpack_require__(14);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _nestjsquerygraphql = __webpack_require__(15);
 let GetPayoutLinkUrlInput = class GetPayoutLinkUrlInput {
 };
 _ts_decorate._([
@@ -43367,7 +43379,7 @@ GetPayoutLinkUrlInput = _ts_decorate._([
 
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43380,10 +43392,10 @@ Object.defineProperty(exports, "UpdatePayoutMethodInput", ({
         return UpdatePayoutMethodInput;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _nestjsquerygraphql = __webpack_require__(14);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _nestjsquerygraphql = __webpack_require__(15);
 let UpdatePayoutMethodInput = class UpdatePayoutMethodInput {
 };
 _ts_decorate._([
@@ -43403,7 +43415,7 @@ UpdatePayoutMethodInput = _ts_decorate._([
 
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43416,19 +43428,19 @@ Object.defineProperty(exports, "WalletModule", ({
         return WalletModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _nestjsquerytypeorm = __webpack_require__(35);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _drivertransactiondto = __webpack_require__(89);
-const _driverwalletdto = __webpack_require__(97);
-const _earningsservice = __webpack_require__(98);
-const _walletresolver = __webpack_require__(100);
-const _axios = __webpack_require__(16);
-const _walletservice = __webpack_require__(103);
+const _ts_decorate = __webpack_require__(5);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _nestjsquerytypeorm = __webpack_require__(37);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _drivertransactiondto = __webpack_require__(91);
+const _driverwalletdto = __webpack_require__(99);
+const _earningsservice = __webpack_require__(100);
+const _walletresolver = __webpack_require__(102);
+const _axios = __webpack_require__(17);
+const _walletservice = __webpack_require__(105);
 let WalletModule = class WalletModule {
 };
 WalletModule = _ts_decorate._([
@@ -43512,7 +43524,7 @@ WalletModule = _ts_decorate._([
 
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43525,10 +43537,10 @@ Object.defineProperty(exports, "DriverWalletDTO", ({
         return DriverWalletDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let DriverWalletDTO = class DriverWalletDTO {
 };
 _ts_decorate._([
@@ -43567,7 +43579,7 @@ DriverWalletDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43580,14 +43592,14 @@ Object.defineProperty(exports, "EarningsService", ({
         return EarningsService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
-const _earningsdto = __webpack_require__(99);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
+const _earningsdto = __webpack_require__(101);
 let EarningsService = class EarningsService {
     constructor(requestRepository){
         this.requestRepository = requestRepository;
@@ -43686,7 +43698,7 @@ EarningsService = _ts_decorate._([
 
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43710,9 +43722,9 @@ _export(exports, {
         return TimeQuery;
     }
 });
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 var TimeQuery = /*#__PURE__*/ function(TimeQuery) {
     TimeQuery["Daily"] = "daily";
     TimeQuery["Weekly"] = "weekly";
@@ -43785,7 +43797,7 @@ Datapoint = _ts_decorate._([
 
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -43798,24 +43810,24 @@ Object.defineProperty(exports, "WalletResolver", ({
         return WalletResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _graphql = __webpack_require__(7);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
-const _authenticateduser = __webpack_require__(40);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _earningsdto = __webpack_require__(99);
-const _topupwalletinput = __webpack_require__(92);
-const _earningsservice = __webpack_require__(98);
-const _giftcarddto = __webpack_require__(101);
-const _setup_payment_methoddto = __webpack_require__(102);
-const _rxjs = __webpack_require__(19);
-const _axios = __webpack_require__(16);
-const _walletservice = __webpack_require__(103);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _graphql = __webpack_require__(8);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
+const _authenticateduser = __webpack_require__(42);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _earningsdto = __webpack_require__(101);
+const _topupwalletinput = __webpack_require__(94);
+const _earningsservice = __webpack_require__(100);
+const _giftcarddto = __webpack_require__(103);
+const _setup_payment_methoddto = __webpack_require__(104);
+const _rxjs = __webpack_require__(21);
+const _axios = __webpack_require__(17);
+const _walletservice = __webpack_require__(105);
 let WalletResolver = class WalletResolver {
     constructor(gatewayRepo, driverRepo, context, earningsService, commonGiftCardService, httpService, cryptoService, walletService){
         this.gatewayRepo = gatewayRepo;
@@ -44019,7 +44031,7 @@ WalletResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44032,10 +44044,10 @@ Object.defineProperty(exports, "GiftCardDTO", ({
         return GiftCardDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _nestjsquerygraphql = __webpack_require__(14);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _nestjsquerygraphql = __webpack_require__(15);
 let GiftCardDTO = class GiftCardDTO {
 };
 _ts_decorate._([
@@ -44060,7 +44072,7 @@ GiftCardDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44073,9 +44085,9 @@ Object.defineProperty(exports, "SetupPaymentMethodDto", ({
         return SetupPaymentMethodDto;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
 let SetupPaymentMethodDto = class SetupPaymentMethodDto {
 };
 _ts_decorate._([
@@ -44090,7 +44102,7 @@ SetupPaymentMethodDto = _ts_decorate._([
 
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44103,13 +44115,13 @@ Object.defineProperty(exports, "WalletService", ({
         return WalletService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
 let WalletService = class WalletService {
     constructor(gatewayRepo, savedPaymentMethodRepo, driverRepository){
         this.gatewayRepo = gatewayRepo;
@@ -44188,7 +44200,7 @@ WalletService = _ts_decorate._([
 
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44201,12 +44213,12 @@ Object.defineProperty(exports, "SOSModule", ({
         return SOSModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _sosresolver = __webpack_require__(105);
-const _sosservice = __webpack_require__(107);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _sosresolver = __webpack_require__(107);
+const _sosservice = __webpack_require__(109);
 let SOSModule = class SOSModule {
 };
 SOSModule = _ts_decorate._([
@@ -44226,7 +44238,7 @@ SOSModule = _ts_decorate._([
 
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44239,15 +44251,15 @@ Object.defineProperty(exports, "SOSResolver", ({
         return SOSResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
-const _jwtgqlauthguard = __webpack_require__(39);
-const _sosdto = __webpack_require__(106);
-const _sosservice = __webpack_require__(107);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
+const _jwtgqlauthguard = __webpack_require__(41);
+const _sosdto = __webpack_require__(108);
+const _sosservice = __webpack_require__(109);
 let SOSResolver = class SOSResolver {
     constructor(sosService){
         this.sosService = sosService;
@@ -44286,7 +44298,7 @@ SOSResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44299,10 +44311,10 @@ Object.defineProperty(exports, "SOSDTO", ({
         return SOSDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _nestjsquerygraphql = __webpack_require__(14);
-const _graphql = __webpack_require__(7);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _nestjsquerygraphql = __webpack_require__(15);
+const _graphql = __webpack_require__(8);
 let SOSDTO = class SOSDTO {
 };
 _ts_decorate._([
@@ -44315,7 +44327,7 @@ SOSDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44328,13 +44340,13 @@ Object.defineProperty(exports, "SOSService", ({
         return SOSService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
 let SOSService = class SOSService {
     constructor(sosRepository, operatorRepo, pubsub){
         this.sosRepository = sosRepository;
@@ -44386,13 +44398,13 @@ SOSService = _ts_decorate._([
 
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ ((module) => {
 
 module.exports = require("@willsoto/nestjs-prometheus");
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44405,12 +44417,12 @@ Object.defineProperty(exports, "NotificationModule", ({
         return NotificationModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _notificationservice = __webpack_require__(110);
-const _notificationresolver = __webpack_require__(111);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _notificationservice = __webpack_require__(112);
+const _notificationresolver = __webpack_require__(113);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
 let NotificationModule = class NotificationModule {
 };
 NotificationModule = _ts_decorate._([
@@ -44431,7 +44443,7 @@ NotificationModule = _ts_decorate._([
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44444,13 +44456,13 @@ Object.defineProperty(exports, "NotificationService", ({
         return NotificationService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _typeorm = __webpack_require__(9);
-const _database = __webpack_require__(10);
-const _typeorm1 = __webpack_require__(11);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _typeorm = __webpack_require__(10);
+const _database = __webpack_require__(11);
+const _typeorm1 = __webpack_require__(12);
 let NotificationService = class NotificationService {
     constructor(driverRepository, driverSessionRepository){
         this.driverRepository = driverRepository;
@@ -44484,7 +44496,7 @@ NotificationService = _ts_decorate._([
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44497,14 +44509,14 @@ Object.defineProperty(exports, "NotificationResolver", ({
         return NotificationResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _common = __webpack_require__(1);
-const _graphql = __webpack_require__(7);
-const _notificationservice = __webpack_require__(110);
-const _authenticateduser = __webpack_require__(40);
-const _jwtgqlauthguard = __webpack_require__(39);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _common = __webpack_require__(2);
+const _graphql = __webpack_require__(8);
+const _notificationservice = __webpack_require__(112);
+const _authenticateduser = __webpack_require__(42);
+const _jwtgqlauthguard = __webpack_require__(41);
 let NotificationResolver = class NotificationResolver {
     constructor(context, notificationService){
         this.context = context;
@@ -44540,7 +44552,7 @@ NotificationResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44553,12 +44565,12 @@ Object.defineProperty(exports, "EphemeralMessagesModule", ({
         return EphemeralMessagesModule;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _common = __webpack_require__(1);
-const _database = __webpack_require__(10);
-const _ephemeralmessagesservice = __webpack_require__(113);
-const _ephemeralmessagesresolver = __webpack_require__(114);
-const _ordermodule = __webpack_require__(46);
+const _ts_decorate = __webpack_require__(5);
+const _common = __webpack_require__(2);
+const _database = __webpack_require__(11);
+const _ephemeralmessagesservice = __webpack_require__(115);
+const _ephemeralmessagesresolver = __webpack_require__(116);
+const _ordermodule = __webpack_require__(48);
 let EphemeralMessagesModule = class EphemeralMessagesModule {
 };
 EphemeralMessagesModule = _ts_decorate._([
@@ -44576,7 +44588,7 @@ EphemeralMessagesModule = _ts_decorate._([
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44589,10 +44601,10 @@ Object.defineProperty(exports, "EphemeralMessagesService", ({
         return EphemeralMessagesService;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _common = __webpack_require__(1);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _common = __webpack_require__(2);
+const _database = __webpack_require__(11);
 let EphemeralMessagesService = class EphemeralMessagesService {
     constructor(driverRedisService){
         this.driverRedisService = driverRedisService;
@@ -44627,7 +44639,7 @@ EphemeralMessagesService = _ts_decorate._([
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44640,15 +44652,15 @@ Object.defineProperty(exports, "EphemeralMessagesResolver", ({
         return EphemeralMessagesResolver;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _ts_param = __webpack_require__(27);
-const _graphql = __webpack_require__(7);
-const _ephemeralmessagesservice = __webpack_require__(113);
-const _ephemeralmessagedto = __webpack_require__(115);
-const _common = __webpack_require__(1);
-const _authenticateduser = __webpack_require__(40);
-const _jwtgqlauthguard = __webpack_require__(39);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _ts_param = __webpack_require__(29);
+const _graphql = __webpack_require__(8);
+const _ephemeralmessagesservice = __webpack_require__(115);
+const _ephemeralmessagedto = __webpack_require__(117);
+const _common = __webpack_require__(2);
+const _authenticateduser = __webpack_require__(42);
+const _jwtgqlauthguard = __webpack_require__(41);
 let EphemeralMessagesResolver = class EphemeralMessagesResolver {
     constructor(ephemeralMessagesService, context){
         this.ephemeralMessagesService = ephemeralMessagesService;
@@ -44693,7 +44705,7 @@ EphemeralMessagesResolver = _ts_decorate._([
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -44706,10 +44718,10 @@ Object.defineProperty(exports, "EphemeralMessageDTO", ({
         return EphemeralMessageDTO;
     }
 }));
-const _ts_decorate = __webpack_require__(4);
-const _ts_metadata = __webpack_require__(5);
-const _graphql = __webpack_require__(7);
-const _database = __webpack_require__(10);
+const _ts_decorate = __webpack_require__(5);
+const _ts_metadata = __webpack_require__(6);
+const _graphql = __webpack_require__(8);
+const _database = __webpack_require__(11);
 (0, _graphql.registerEnumType)(_database.DriverEphemeralMessageType, {
     name: 'EphemeralMessageType'
 });
@@ -44761,13 +44773,13 @@ EphemeralMessageDTO = _ts_decorate._([
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ ((module) => {
 
 module.exports = require("firebase-admin/app");
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 // Import with `const Sentry = require("@sentry/nestjs");` if you are using CJS
@@ -44775,12 +44787,12 @@ module.exports = require("firebase-admin/app");
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
-const _interop_require_wildcard = __webpack_require__(118);
-const _apollo = __webpack_require__(15);
-const _common = __webpack_require__(1);
-const _nestjs = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(119));
-const _profilingnode = __webpack_require__(120);
-const _dotenv = __webpack_require__(121);
+const _interop_require_wildcard = __webpack_require__(1);
+const _apollo = __webpack_require__(16);
+const _common = __webpack_require__(2);
+const _nestjs = /*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(120));
+const _profilingnode = __webpack_require__(121);
+const _dotenv = __webpack_require__(122);
 (0, _dotenv.config)({
     path: __dirname + '/.env'
 });
@@ -44805,25 +44817,19 @@ _nestjs.init({
 
 
 /***/ }),
-/* 118 */
-/***/ ((module) => {
-
-module.exports = require("@swc/helpers/_/_interop_require_wildcard");
-
-/***/ }),
-/* 119 */
+/* 120 */
 /***/ ((module) => {
 
 module.exports = require("@sentry/nestjs");
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ ((module) => {
 
 module.exports = require("@sentry/profiling-node");
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ ((module) => {
 
 module.exports = require("dotenv");
@@ -44905,13 +44911,14 @@ var exports = __webpack_exports__;
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
-const _common = __webpack_require__(1);
-const _core = __webpack_require__(2);
-const _driverapimodule = __webpack_require__(3);
-const _app = __webpack_require__(116);
-const _firebaseadmin = __webpack_require__(20);
-__webpack_require__(117);
-const _licenseverify = __webpack_require__(13);
+const _interop_require_wildcard = __webpack_require__(1);
+const _common = __webpack_require__(2);
+const _core = __webpack_require__(3);
+const _driverapimodule = __webpack_require__(4);
+const _app = __webpack_require__(118);
+const _firebaseadmin = __webpack_require__(22);
+__webpack_require__(119);
+const _licenseverify = __webpack_require__(14);
 async function bootstrap() {
     const app = await _core.NestFactory.create(_driverapimodule.DriverAPIModule.register());
     const port = parseInt(process.env.PORT || process.env.DRIVER_API_PORT || '3000', 10);
@@ -44919,9 +44926,17 @@ async function bootstrap() {
     app.enableCors();
     const config = await (0, _licenseverify.getConfig)(process.env.NODE_ENV ?? 'production');
     if (config != null) {
-        (0, _app.initializeApp)({
-            credential: _firebaseadmin.credential.cert(`${process.cwd()}/config/${config.firebaseProjectPrivateKey}`)
-        });
+        const fs = await Promise.resolve().then(()=>/*#__PURE__*/ _interop_require_wildcard._(__webpack_require__(18)));
+        const fbPath = `${process.cwd()}/config/${config.firebaseProjectPrivateKey}`;
+        if (fs.existsSync(fbPath)) {
+            try {
+                (0, _app.initializeApp)({
+                    credential: _firebaseadmin.credential.cert(fbPath)
+                });
+            } catch (e) {
+                _common.Logger.warn('Firebase init skipped: ' + e?.message, 'Driver API');
+            }
+        }
     }
     await app.listen(port, '0.0.0.0', ()=>{
         _common.Logger.log('Listening at http://0.0.0.0:' + port, 'Driver API');

@@ -19,11 +19,17 @@ async function bootstrap() {
   app.enableCors();
   const config = await getConfig(process.env.NODE_ENV ?? 'production');
   if (config != null) {
-    initializeApp({
-      credential: credential.cert(
-        `${process.cwd()}/config/${config.firebaseProjectPrivateKey}`,
-      ),
-    });
+    const fs = await import('fs');
+    const fbPath = `${process.cwd()}/config/${config.firebaseProjectPrivateKey}`;
+    if (fs.existsSync(fbPath)) {
+      try {
+        initializeApp({
+          credential: credential.cert(fbPath),
+        });
+      } catch (e) {
+        Logger.warn('Firebase init skipped: ' + (e as any)?.message, 'Driver API');
+      }
+    }
   }
   await app.listen(port, '0.0.0.0', () => {
     Logger.log('Listening at http://0.0.0.0:' + port, 'Driver API');

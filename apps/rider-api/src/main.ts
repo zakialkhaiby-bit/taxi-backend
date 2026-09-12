@@ -17,12 +17,18 @@ async function bootstrap() {
   app.enableShutdownHooks();
   app.enableCors();
   const config = await getConfig(process.env.NODE_ENV ?? 'production');
-  if (config) {
-    initializeApp({
-      credential: credential.cert(
-        `${process.cwd()}/config/${config.firebaseProjectPrivateKey}`,
-      ),
-    });
+  if (config != null) {
+    const fs = await import('fs');
+    const fbPath = `${process.cwd()}/config/${config.firebaseProjectPrivateKey}`;
+    if (fs.existsSync(fbPath)) {
+      try {
+        initializeApp({
+          credential: credential.cert(fbPath),
+        });
+      } catch (e) {
+        Logger.warn('Firebase init skipped: ' + (e as any)?.message, 'Rider API');
+      }
+    }
   }
 
   await app.listen(port, '0.0.0.0', () => {
