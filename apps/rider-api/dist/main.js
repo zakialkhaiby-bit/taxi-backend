@@ -24000,12 +24000,13 @@ RedisHelpersModule = redis_helper_module_ts_decorate([
                 provide: REDIS,
                 useFactory: function() {
                     return redis_helper_module_async_to_generator(function() {
-                        var client;
+                        var redisUrl, client;
                         return redis_helper_module_ts_generator(this, function(_state) {
                             switch(_state.label){
                                 case 0:
+                                    redisUrl = process.env.REDIS_URL || (process.env.REDIS_HOST ? "redis://" + (process.env.REDIS_PASSWORD ? ":" + process.env.REDIS_PASSWORD + "@" : '') + process.env.REDIS_HOST + ":" + (process.env.REDIS_PORT || '6379') : undefined);
                                     client = (0,external_redis_namespaceObject.createClient)({
-                                        url: process.env.REDIS_URL,
+                                        url: redisUrl,
                                         socket: {
                                             reconnectStrategy: function(retries) {
                                                 return Math.min(retries * 50, 2000);

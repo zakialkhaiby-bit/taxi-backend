@@ -20,8 +20,13 @@ import { REDIS } from './redis-token';
     {
       provide: REDIS,
       useFactory: async (): Promise<RedisClientType> => {
+        const redisUrl =
+          process.env.REDIS_URL ||
+          (process.env.REDIS_HOST
+            ? `redis://${process.env.REDIS_PASSWORD ? `:${process.env.REDIS_PASSWORD}@` : ''}${process.env.REDIS_HOST}:${process.env.REDIS_PORT || '6379'}`
+            : undefined);
         const client = createClient({
-          url: process.env.REDIS_URL,
+          url: redisUrl,
           socket: {
             reconnectStrategy: (retries) => Math.min(retries * 50, 2000),
           },
