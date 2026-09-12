@@ -246,31 +246,36 @@ export class DriverRedisService {
       `Searching for close drivers: point=(${point.lat}, ${point.lng}), maxDistance=${maxDistance}m, maxCount=${maxCount}`,
     );
 
-    const result = await this.redisClient.ft.search(
-      'index:driver',
-      `@location:[${point.lng} ${point.lat} ${maxDistance} m]`,
-      {
-        LIMIT: {
-          from: 0,
-          size: maxCount,
+    try {
+      const result = await this.redisClient.ft.search(
+        'index:driver',
+        `@location:[${point.lng} ${point.lat} ${maxDistance} m]`,
+        {
+          LIMIT: {
+            from: 0,
+            size: maxCount,
+          },
         },
-      },
-    );
+      );
 
-    if (result.total < 1) {
-      Logger.debug('No close drivers found');
+      if (result.total < 1) {
+        Logger.debug('No close drivers found');
+        return [];
+      }
+
+      const entries = [];
+      for (let document of result.documents) {
+        entries.push(plainToInstance(DriverRedisSnapshot, document.value));
+      }
+      return entries.map((driver) => ({
+        lat: driver.location.lat,
+        lng: driver.location.lng,
+        heading: driver.heading,
+      }));
+    } catch (e) {
+      Logger.debug(`ft.search not available or error: ${(e as any)?.message}`);
       return [];
     }
-
-    const entries = [];
-    for (let document of result.documents) {
-      entries.push(plainToInstance(DriverRedisSnapshot, document.value));
-    }
-    return entries.map((driver) => ({
-      lat: driver.location.lat,
-      lng: driver.location.lng,
-      heading: driver.heading,
-    }));
   }
 
   async getSuitableDriversForOrder(input: {
@@ -291,27 +296,32 @@ export class DriverRedisService {
     );
     Logger.debug(`Generated query: ${query}`);
 
-    const result = await this.redisClient.ft.search('index:driver', query, {
-      RETURN: ['$'],
-      LIMIT: {
-        from: 0,
-        size: input.maxCount,
-      },
-    });
+    try {
+      const result = await this.redisClient.ft.search('index:driver', query, {
+        RETURN: ['$'],
+        LIMIT: {
+          from: 0,
+          size: input.maxCount,
+        },
+      });
 
-    if (result.total < 1) {
-      Logger.debug('No suitable drivers found');
+      if (result.total < 1) {
+        Logger.debug('No suitable drivers found');
+        return [];
+      }
+      Logger.debug(`Found ${JSON.stringify(result.documents)} suitable drivers`);
+
+      let parsed = plainToInstance(
+        DriverRedisSnapshot,
+        result.documents.map((doc) => doc.value),
+      );
+      Logger.debug(parsed, `driverredisservice.getSuitableDriversForOrder:`);
+
+      return parsed;
+    } catch (e) {
+      Logger.debug(`ft.search not available or error: ${(e as any)?.message}`);
       return [];
     }
-    Logger.debug(`Found ${JSON.stringify(result.documents)} suitable drivers`);
-
-    let parsed = plainToInstance(
-      DriverRedisSnapshot,
-      result.documents.map((doc) => doc.value),
-    );
-    Logger.debug(parsed, `driverredisservice.getSuitableDriversForOrder:`);
-
-    return parsed;
   }
 
   async getDriverLocationsInBounds(bounds: {
@@ -425,21 +435,26 @@ export class DriverRedisService {
     center: Point,
     count: number,
   ): Promise<DriverRedisSnapshot[]> {
-    const drivers = await this.redisClient.ft.search(
-      'index:driver',
-      `@location:[${center.lng} ${center.lat} 100000000 m]`,
-      {
-        LIMIT: {
-          from: 0,
-          size: count,
+    try {
+      const drivers = await this.redisClient.ft.search(
+        'index:driver',
+        `@location:[${center.lng} ${center.lat} 100000000 m]`,
+        {
+          LIMIT: {
+            from: 0,
+            size: count,
+          },
         },
-      },
-    );
-    Logger.debug(`Found ${drivers.total} drivers in range`);
-    return plainToInstance(
-      DriverRedisSnapshot,
-      drivers.documents.map((doc) => doc.value) || [],
-    );
+      );
+      Logger.debug(`Found ${drivers.total} drivers in range`);
+      return plainToInstance(
+        DriverRedisSnapshot,
+        drivers.documents.map((doc) => doc.value) || [],
+      );
+    } catch (e) {
+      Logger.debug(`ft.search not available or error: ${(e as any)?.message}`);
+      return [];
+    }
   }
 
   async expire(userId: number[]) {

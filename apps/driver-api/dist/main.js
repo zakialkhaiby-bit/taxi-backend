@@ -20529,12 +20529,20 @@ var DriverRedisService = /*#__PURE__*/ function() {
     };
     _proto.getCloseDrivers = function getCloseDrivers(input) {
         return driver_redis_service_async_to_generator(function() {
-            var point, maxCount, maxDistance, result, entries, _iterator, _step, document;
+            var point, maxCount, maxDistance, result, entries, _iterator, _step, document, e;
             return driver_redis_service_ts_generator(this, function(_state) {
                 switch(_state.label){
                     case 0:
                         point = input.point, maxCount = input.maxCount, maxDistance = input.maxDistance;
                         common_.Logger.debug("Searching for close drivers: point=(" + point.lat + ", " + point.lng + "), maxDistance=" + maxDistance + "m, maxCount=" + maxCount);
+                        _state.label = 1;
+                    case 1:
+                        _state.trys.push([
+                            1,
+                            3,
+                            ,
+                            4
+                        ]);
                         return [
                             4,
                             this.redisClient.ft.search('index:driver', "@location:[" + point.lng + " " + point.lat + " " + maxDistance + " m]", {
@@ -20544,7 +20552,7 @@ var DriverRedisService = /*#__PURE__*/ function() {
                                 }
                             })
                         ];
-                    case 1:
+                    case 2:
                         result = _state.sent();
                         if (result.total < 1) {
                             common_.Logger.debug('No close drivers found');
@@ -20568,13 +20576,24 @@ var DriverRedisService = /*#__PURE__*/ function() {
                                 };
                             })
                         ];
+                    case 3:
+                        e = _state.sent();
+                        common_.Logger.debug("ft.search not available or error: " + (e == null ? void 0 : e.message));
+                        return [
+                            2,
+                            []
+                        ];
+                    case 4:
+                        return [
+                            2
+                        ];
                 }
             });
         }).call(this);
     };
     _proto.getSuitableDriversForOrder = function getSuitableDriversForOrder(input) {
         return driver_redis_service_async_to_generator(function() {
-            var point, distance, serviceId, fleetId, query, result, parsed;
+            var point, distance, serviceId, fleetId, query, result, parsed, e;
             return driver_redis_service_ts_generator(this, function(_state) {
                 switch(_state.label){
                     case 0:
@@ -20582,6 +20601,14 @@ var DriverRedisService = /*#__PURE__*/ function() {
                         query = "@serviceId:{" + serviceId + "}" + (fleetId ? " @fleetId:{" + fleetId + "}" : '') + (" @location:[" + point.lng + " " + point.lat + " " + distance + " m]");
                         common_.Logger.debug("Searching for drivers: serviceId=" + serviceId + ", fleetId=" + (fleetId || 'any') + ", point=(" + point.lng + ", " + point.lat + "), distance=" + distance + "m");
                         common_.Logger.debug("Generated query: " + query);
+                        _state.label = 1;
+                    case 1:
+                        _state.trys.push([
+                            1,
+                            3,
+                            ,
+                            4
+                        ]);
                         return [
                             4,
                             this.redisClient.ft.search('index:driver', query, {
@@ -20594,7 +20621,7 @@ var DriverRedisService = /*#__PURE__*/ function() {
                                 }
                             })
                         ];
-                    case 1:
+                    case 2:
                         result = _state.sent();
                         if (result.total < 1) {
                             common_.Logger.debug('No suitable drivers found');
@@ -20611,6 +20638,17 @@ var DriverRedisService = /*#__PURE__*/ function() {
                         return [
                             2,
                             parsed
+                        ];
+                    case 3:
+                        e = _state.sent();
+                        common_.Logger.debug("ft.search not available or error: " + (e == null ? void 0 : e.message));
+                        return [
+                            2,
+                            []
+                        ];
+                    case 4:
+                        return [
+                            2
                         ];
                 }
             });
@@ -20784,10 +20822,16 @@ var DriverRedisService = /*#__PURE__*/ function() {
     };
     _proto.getAllOnline = function getAllOnline(center, count) {
         return driver_redis_service_async_to_generator(function() {
-            var drivers;
+            var drivers, e;
             return driver_redis_service_ts_generator(this, function(_state) {
                 switch(_state.label){
                     case 0:
+                        _state.trys.push([
+                            0,
+                            2,
+                            ,
+                            3
+                        ]);
                         return [
                             4,
                             this.redisClient.ft.search('index:driver', "@location:[" + center.lng + " " + center.lat + " 100000000 m]", {
@@ -20805,6 +20849,17 @@ var DriverRedisService = /*#__PURE__*/ function() {
                             (0,external_class_transformer_.plainToInstance)(DriverRedisSnapshot, drivers.documents.map(function(doc) {
                                 return doc.value;
                             }) || [])
+                        ];
+                    case 2:
+                        e = _state.sent();
+                        common_.Logger.debug("ft.search not available or error: " + (e == null ? void 0 : e.message));
+                        return [
+                            2,
+                            []
+                        ];
+                    case 3:
+                        return [
+                            2
                         ];
                 }
             });
