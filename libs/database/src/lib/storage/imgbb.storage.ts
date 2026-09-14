@@ -44,40 +44,86 @@ export class ImgbbStorage implements StoragePort {
         buffer = Buffer.concat(chunks);
       }
 
-      const form = new FormData();
-      form.append('image', buffer.toString('base64'));
-      const filename = path.basename(key, path.extname(key));
-      form.append('name', filename);
+      // 1. Primary: FreeImage.host (Cloudflare-backed CDN, fast & permanent)
+      try {
+        const formFree = new FormData();
+        formFree.append('key', '6d207e02198a847aa98d0a2a901485a5');
+        formFree.append('action', 'upload');
+        formFree.append('source', buffer.toString('base64'));
+        formFree.append('format', 'json');
 
-      const response = await axios.post(
-        `https://api.imgbb.com/1/upload?key=${encodeURIComponent(this.apiKey)}`,
-        form,
-        {
-          headers: form.getHeaders(),
-          httpsAgent: this.httpsAgent,
-          timeout: 45000,
-        },
-      );
+        const resFree = await axios.post(
+          'https://freeimage.host/api/1/upload',
+          formFree,
+          {
+            headers: formFree.getHeaders(),
+            httpsAgent: this.httpsAgent,
+            timeout: 30000,
+          },
+        );
 
-      const data = response.data;
-      if (data?.success && data?.data?.url) {
-        const directUrl: string = data.data.url;
-        if (this.urlMap.size > 1000) {
-          const firstKey = this.urlMap.keys().next().value;
-          if (firstKey) this.urlMap.delete(firstKey);
+        if (resFree.data?.image?.url) {
+          const directUrl: string = resFree.data.image.url;
+          this.urlMap.set(key, directUrl);
+          this.logger.log(`Uploaded image to CDN successfully: ${directUrl}`);
+          return directUrl;
         }
-        this.urlMap.set(key, directUrl);
-        this.logger.log(`Uploaded image to ImgBB successfully: ${directUrl}`);
-        return directUrl;
-      } else {
-        throw new Error(
-          `ImgBB upload failed: ${JSON.stringify(data ?? 'Empty response')}`,
+      } catch (err: any) {
+        this.logger.warn(
+          `FreeImage CDN upload failed (${err.message}), trying secondary...`,
         );
       }
+
+      // 2. Secondary: ImgBB
+      if (this.apiKey && this.apiKey !== 'eec05bc15ee24454e22cdd276fec9d0c') {
+        try {
+          const form = new FormData();
+          form.append('image', buffer.toString('base64'));
+          const filename = path.basename(key, path.extname(key));
+          form.append('name', filename);
+
+          const response = await axios.post(
+            `https://api.imgbb.com/1/upload?key=${encodeURIComponent(this.apiKey)}`,
+            form,
+            {
+              headers: form.getHeaders(),
+              httpsAgent: this.httpsAgent,
+              timeout: 30000,
+            },
+          );
+
+          if (response.data?.success && response.data?.data?.url) {
+            const directUrl: string = response.data.data.url;
+            this.urlMap.set(key, directUrl);
+            this.logger.log(`Uploaded image to ImgBB successfully: ${directUrl}`);
+            return directUrl;
+          }
+        } catch (err: any) {
+          this.logger.warn(`ImgBB upload failed: ${err.message}`);
+        }
+      }
+
+      // 3. Fallback: Save to local uploads directory and serve via static endpoint
+      const fs = await import('fs/promises');
+      const full = path.join(process.cwd(), key);
+      await fs.mkdir(path.dirname(full), { recursive: true });
+      await fs.writeFile(full, buffer);
+
+      const hostUrl =
+        process.env.BASE_URL ||
+        process.env.RENDER_EXTERNAL_URL ||
+        'https://taxi-driver-api.onrender.com';
+      const cleanKey = key.replace(/^uploads\//, '');
+      const directUrl = `${hostUrl.replace(/\/+$/, '')}/uploads/${cleanKey}`;
+      this.urlMap.set(key, directUrl);
+      this.logger.log(
+        `Saved image locally as resilient fallback: ${directUrl}`,
+      );
+      return directUrl;
     } catch (error: any) {
       this.logger.error(
-        `Failed to upload image to ImgBB: ${error.message}`,
-        error.response?.data ? JSON.stringify(error.response.data) : error.stack,
+        `Failed all image upload attempts: ${error.message}`,
+        error.stack,
       );
       throw error;
     }

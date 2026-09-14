@@ -16,6 +16,13 @@ async function bootstrap() {
   );
   app.enableShutdownHooks();
   app.enableCors();
+  const express = await import('express');
+  const fs = await import('fs');
+  const uploadsDir = `${process.cwd()}/uploads`;
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+  app.use('/uploads', express.static(uploadsDir));
   const config = await getConfig(process.env.NODE_ENV ?? 'production');
   if (config != null) {
     const fs = await import('fs');
